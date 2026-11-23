@@ -120,7 +120,6 @@ services:
       context: ../..
       dockerfile: Dockerfile.workspace
     image: nod-workspace:${NOD_IMAGE_TAG:-local}
-    container_name: nod-workspace-${COMPOSE_PROJECT_NAME:-nod-server}
     restart: unless-stopped
     init: true
     cap_drop: [ALL]
